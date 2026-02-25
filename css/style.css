@@ -1,0 +1,306 @@
+/* =====================================
+    CSS Agencia de viajes
+    Fecha: 2026-02-25
+
+    Paleta de colores:
+    - Color1 (azul): #1EA4D9
+    - Color2 (verde): #1FA65A
+    - Color3 (rojo): #F23030
+    - Color4 (beige): #F2E2CE
+===================================== */
+
+/* Importación de la tipografía que usaremos en la web */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+/* ===============================================
+    Estilos generales para toda la página
+=============================================== */
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+/* Clases para los colores de fondo y textos */
+.fondo-color-1 {
+    background-color: #1EA4D9;
+}
+
+.fondo-color-2 {
+    background-color: #1FA65A;
+}
+
+.fondo-color-3 {
+    background-color: #F23030;
+}
+
+.fondo-color-4 {
+    background-color: #F2E2CE;
+}
+
+.fondo-color-blanco {
+    background-color: #fff;
+}
+
+.texto-color-1 {
+    color: #1EA4D9;
+}
+
+.texto-color-2 {
+    color: #1FA65A;
+}
+
+.texto-color-3 {
+    color: #F23030;
+}
+
+.texto-color-4 {
+    color: #F2E2CE;
+}
+
+/* =====================================
+    Estilos para el sistema de grid
+===================================== */
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.fila-centrado-vertical {
+    align-items: center;
+}
+
+.fila-centrado-horizontal {
+    justify-content: center;
+}
+
+.columna {
+    flex: 1;
+    min-width: 300px;
+}
+
+.columna-50 {
+    flex: 0 0 calc(50% - 10px);
+}
+
+.columna-33 {
+    flex: 0 0 calc(33.33% - 13.33px);
+}
+
+.columna-66 {
+    flex: 0 0 calc(66.66% - 6.66px);
+}
+
+.columna-25 {
+    flex: 0 0 calc(25% - 15px);
+}
+
+.columna-auto {
+    flex: 0 0 auto;
+}
+
+
+/* =====================================
+    Estilos para botones
+===================================== */
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.3s all ease;
+}
+
+.boton.boton-color-1 {
+    background-color: #1EA4D9;
+    color: white;
+}
+
+.boton.boton-color-1:hover {
+    background-color: #1B8BC9;
+    color: white;
+}
+
+.boton.boton-color-2 {
+    background-color: #1FA65A;
+    color: white;
+}
+
+.boton.boton-color-2:hover {
+    background-color: #198C4D;
+    color: white;
+}
+
+/* =====================================
+    Estilos para el header
+===================================== */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Logotipo */
+header .logo {
+    max-width: 240px;
+}
+
+header .logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navegación */
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    padding: 35px 20px;
+    transition: 0.3s all ease;
+}
+
+header nav ul li:hover {
+    background-color: #1EA4D9;
+    color: white !important;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: 0.3s all ease;
+}
+
+header nav ul li:hover a {
+    color: white;
+}
+
+/* =====================================
+    Estilos para el banner
+===================================== */
+.hero {
+    background-image: url('../imgs/fondo-hero-home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 200px 0 110px;
+}
+
+.hero .contenido-hero {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* =====================================
+    Estilos generales secciones
+===================================== */
+section {
+    padding: 80px 0;
+}
+
+section .titulo-seccion {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+    color: #1EA4D9;
+    text-align: center;
+}
+
+/* =====================================
+    Estilos destinos destacados home
+===================================== */
+.tarjeta {
+    display: block;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s all ease;
+    text-decoration: none;
+}
+
+.tarjeta .contenedor-imagen {
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.3s all ease;
+    min-height: 350px;
+    position: relative;
+}
+
+.tarjeta .contenedor-imagen .datos {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    background-color: white;
+    border-radius: 10px 0 0 10px;
+}
+
+.tarjeta .contenedor-imagen .datos p {
+    padding: 10px 20px;
+    margin: 0;
+    color: black;
+    font-size: .75rem;
+}
+
+.tarjeta .contenedor-imagen .datos p b {
+    font-size: 2rem;
+}
+
+.tarjeta h3 {
+    padding: 0 20px;
+}
+
+.tarjeta:hover .contenedor-imagen {
+    background-size: 120% 120%;
+}
+
+/* =====================================
+    Estilos footer
+===================================== */
+footer {
+    background-color: #272727;
+    color: white;
+    padding: 40px 0;
+}
+
+footer ul {
+    padding-left: 20px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #F2E2CE;
+}
+
+footer .redes-sociales li {
+    display: inline-block;
+    margin-right: 20px;
+}
