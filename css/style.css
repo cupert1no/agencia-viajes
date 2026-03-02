@@ -9,6 +9,10 @@
     - Color4 (beige): #F2E2CE
 ===================================== */
 
+/* =====================================
+    BLOQUE DE JOSE MANUEL MUÑOZ SANTOS
+===================================== */
+
 /* Importación de la tipografía que usaremos en la web */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
@@ -304,3 +308,8 @@ footer .redes-sociales li {
     display: inline-block;
     margin-right: 20px;
 }
+
+
+/* =====================================
+    FIN BLOQUE DE JOSE MANUEL MUÑOZ SANTOS
+===================================== */
