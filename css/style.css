@@ -313,3 +313,174 @@ footer .redes-sociales li {
 /* =====================================
     FIN BLOQUE DE JOSE MANUEL MUÑOZ SANTOS
 ===================================== */
+
+/* =====================================
+   BLOQUE DE JAVIER DE ROJAS ORTUÑO
+===================================== */
+
+
+.ofertas_contenedor h2 {
+    text-align: center;
+    color:#333;
+    margin-bottom: 30px;
+    font-size:28px;
+}
+
+
+.grid_ofertas {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.tarjeta-detalle {
+    display: flex;
+    flex-direction:column;
+    width: 280px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-detalle:hover {
+    transform: translateY(-5px); 
+}
+
+.tarjeta-detalle .contenedor-imagen {
+    position: relative; 
+    width: 100%;
+    height: 180px;
+}
+
+.tarjeta-detalle .contenedor-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge-vuelo, .badge-descuento {
+    position: absolute;
+    top: 10px;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.badge-vuelo {
+    left: 0;
+    background-color: #1FA65A; 
+    border-radius: 0 4px 4px 0;
+}
+
+.badge-descuento {
+    right: 10px;
+    background-color: #F23030; 
+    border-radius: 4px;
+}
+
+
+.tarjeta-detalle .contenido_tarjeta {
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.tarjeta-detalle .info_tabs {
+    font-size: 11px;
+    color: #888;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    display: flex;
+    gap: 15px;
+}
+
+.tarjeta-detalle .info_tabs .active {
+    color: #1EA4D9; 
+    font-weight: bold;
+    border-bottom: 2px solid #1EA4D9;
+}
+
+.tarjeta-detalle h3 {
+    color: #1EA4D9;
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.tarjeta-detalle .nombre_hotel {
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.tarjeta-detalle .estrellas {
+    color: #ffc107; 
+    margin-left: 5px;
+}
+
+.tarjeta-detalle .detalles {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+    font-size: 12px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.tarjeta-detalle .texto_promo {
+    color: #1EA4D9;
+    font-size: 11px;
+    font-weight: bold;
+    min-height: 32px; /* Esto asegura que aunque el texto sea corto, ocupe 2 líneas */
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center; /* Centra el texto verticalmente si solo hay una línea */
+}
+
+.tarjeta-detalle .seguro {
+    margin-top: 0p;
+    font-size: 12px;
+    color: #1FA65A;
+    font-weight: bold;
+    margin-bottom: 15px;;
+
+}
+
+
+.tarjeta-detalle .footer_tarjeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: auto;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.tarjeta-detalle .precio {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta-detalle .precio_antiguo {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 11px;
+}
+
+.tarjeta-detalle .precio_actual {
+    color: #F23030;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* =====================================
+    FIN DE BLOQUE DE JAVIER DE ROJAS ORTUÑO
+===================================== */
